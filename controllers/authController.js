@@ -1,4 +1,3 @@
-// controllers/authController.js
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
@@ -63,7 +62,6 @@ const login = async (req, res) => {
             expiresIn: config.expiresIn
         });
 
-        // res.json({ token });
         res.status(200).json(ResponseFormat(true, "User logged in successfully...", {
             token, user: {
                 name: user.name,

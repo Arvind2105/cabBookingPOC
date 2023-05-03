@@ -97,3 +97,15 @@
 {"cabId":"6450e82bd18d7c7a699da6e6","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-02T10:38:35.233Z"}
 {"cabId":"6450e8cd1bc665d1df95f480","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-02T10:41:17.922Z"}
 {"cabId":"64510365b627b4b1b6b210ba","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-02T12:34:45.140Z"}
+{"cabId":"6451f541035f4d83480467ae","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T05:46:41.730Z"}
+{"cabId":"6452076393c4cefdc9def92b","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T07:04:03.959Z"}
+{"cabId":"645207a5e2c5fb74c58dde4c","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T07:05:09.813Z"}
+{"cabId":"6452088449bdfba6792ae749","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T07:08:52.925Z"}
+{"cabId":"64520992866fe41da4fc7eac","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T07:13:22.269Z"}
+{"cabId":"64520992866fe41da4fc7eac","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T07:13:22.378Z"}
+{"cabId":"645209d58c20a5386455b5e9","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T07:14:29.207Z"}
+{"cabId":"645209d58c20a5386455b5e9","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T07:14:29.297Z"}
+{"cabId":"6452221be84f739426ef7474","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T08:58:03.045Z"}
+{"cabId":"6452221be84f739426ef7474","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T08:58:03.068Z"}
+{"cabId":"645223950a0fa3cc095f7585","level":"info","message":"Cab booked successfully","service":"cabBookingPOC","timestamp":"2023-05-03T09:04:21.295Z"}
+{"cabId":"645223950a0fa3cc095f7585","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T09:04:21.335Z"}

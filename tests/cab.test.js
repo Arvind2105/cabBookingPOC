@@ -54,7 +54,6 @@ describe("GET /api/cabs", () => {
         expect(res.status).toBe(200);
         expect(res.body.status).toBe(true);
         expect(res.body.message).toBe('All cabs are...');
-        // expect(res.body.data).toHaveLength(3);
         expect(res.body.data[0]._id).toBe(cabId);
     });
 
@@ -268,72 +267,6 @@ describe('addCab', () => {
         expect(res.body.data.cabType).toBe('Sedan');
     });
 });
-
-// updateCab api by registration number...
-// describe('PATCH /api/cabs/:registrationNumber', () => {
-//     let token;
-//     let cab;
-
-//     beforeAll(async () => {
-//         await User.deleteMany();
-//         await Cab.deleteMany();
-//         const salt = await bcrypt.genSalt(10);
-//         const hashedPassword = await bcrypt.hash("password", salt);
-//         const user = new User({
-//             name: 'Test User',
-//             email: 'testuser@example.com',
-//             password: hashedPassword,
-//             phoneNumber: "1234567890"
-//         });
-//         await user.save();
-
-//         // login the user to get the jwt token
-//         const response = await request(app)
-//             .post("/api/auth/login")
-//             .send({ email: user.email, password: "password" });
-//         token = response.body.data.token;
-
-//         cab = new Cab({
-//             registrationNumber: 'AB1234',
-//             driverName: 'John Doe',
-//             driverPhoneNumber: '1234567890',
-//             cabType: 'Sedan',
-//         });
-//         await cab.save();
-//     });
-
-//     afterAll(async () => {
-//         await User.deleteMany();
-//         await Cab.deleteMany();
-//     });
-
-//     it('should return 401 if user is not logged in', async () => {
-//         token = '';
-//         const res = await request(app)
-//             .patch(`/api/cabs/${cab.registrationNumber}`)
-//             .send({ driverName: 'Updated Driver' });
-//         expect(res.status).toBe(401);
-//     });
-
-//     it('should return 404 if cab is not found', async () => {
-//         const res = await request(app)
-//             .patch('/api/cabs/invalid_registration_number')
-//             .send({ driverName: 'Updated Driver' })
-//             .set('x-auth-token', token);
-//         expect(res.status).toBe(404);
-//     });
-
-//     it('should update the cab if valid input is provided', async () => {
-//         const res = await request(app)
-//             .patch(`/api/cabs/${cab.registrationNumber}`)
-//             .send({ driverName: 'Updated Driver' })
-//             .set('x-auth-token', token);
-//         expect(res.status).toBe(200);
-//         expect(res.body.status).toBe(true);
-//         expect(res.body.message).toBe('Cab updated successfully...');
-//         expect(res.body.data.driverName).toBe('Updated Driver');
-//     });
-// });
 
 // deleteCab api...
 describe("DELETE /api/cabs/:registrationNumber", () => {

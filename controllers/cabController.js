@@ -1,7 +1,7 @@
 const Cab = require('../models/cabModel')
 const ResponseFormat = require('../responseFormat');
 const logger = require('../logger');
-// done
+
 const addCab = async (req, res) => {
     try {
         const { registrationNumber, driverName, driverPhoneNumber, cabType } = req.body;
@@ -32,18 +32,15 @@ const addCab = async (req, res) => {
     }
 
     catch (err) {
-        // console.error(err);
         logger.error("Error adding cab", { error: err.message });
         res.json(ResponseFormat(false, "Internal server error"));
     }
 };
 
-// done
 const getAllCabs = async (req, res) => {
     try {
         const cabs = await Cab.find({});
         res.json(ResponseFormat(true, "All cabs are...", cabs));
-        // res.json(cabs);
     }
     catch (err) {
         console.error(err);
@@ -51,19 +48,15 @@ const getAllCabs = async (req, res) => {
     }
 };
 
-// done
 const getCabByRegistrationNumber = async (req, res) => {
     try {
         const registrationNumber = req.params.registrationNumber;
         const cab = await Cab.findOne({ registrationNumber });
         if (!cab) {
-            // return res.status(404).send('Cab not found');
             return res.status(404).json(ResponseFormat(false, "Cab not found with given registrationNumber..."));
         }
         else {
-            // res.json(cab);
             res.json(ResponseFormat(true, "Cab Found...", cab));
-
         }
     }
     catch (err) {
@@ -101,7 +94,6 @@ const updateCab = async (req, res) => {
 const deleteCab = async (req, res) => {
     try {
         const registrationNumber = req.params.registrationNumber;
-
         // Delete the cab
         const deletedCab = await Cab.findOneAndDelete({ registrationNumber });
         if (!deletedCab) {

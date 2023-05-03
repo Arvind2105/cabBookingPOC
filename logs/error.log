@@ -58,3 +58,9 @@
 {"level":"error","message":"Cab already exists","registrationNumber":"AB1234","service":"cabBookingPOC","timestamp":"2023-05-02T06:20:30.683Z"}
 {"driverPhoneNumber":"123456789","level":"error","message":"Incorrect phone number","service":"cabBookingPOC","timestamp":"2023-05-02T06:21:15.863Z"}
 {"level":"error","message":"Cab already exists","registrationNumber":"AB1234","service":"cabBookingPOC","timestamp":"2023-05-02T06:21:15.889Z"}
+{"cabId":"64520992866fe41da4fc7eac","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T07:13:22.378Z"}
+{"cabId":"645209d58c20a5386455b5e9","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T07:14:29.297Z"}
+{"cabId":"6452221be84f739426ef7474","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T08:58:03.068Z"}
+{"cabId":"645223950a0fa3cc095f7585","level":"error","message":"Cab already booked with same locations","service":"cabBookingPOC","timestamp":"2023-05-03T09:04:21.335Z"}
+{"driverPhoneNumber":"123456789","level":"error","message":"Incorrect phone number","service":"cabBookingPOC","timestamp":"2023-05-03T09:05:50.580Z"}
+{"level":"error","message":"Cab already exists","registrationNumber":"AB1234","service":"cabBookingPOC","timestamp":"2023-05-03T09:05:50.598Z"}

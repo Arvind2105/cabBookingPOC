@@ -5,7 +5,6 @@ const Cab = require('../models/cabModel');
 const logger = require('../logger');
 const fs = require('fs');
 const { Parser } = require('json2csv');
-// const PDFDocument = require('pdfkit');
 const ObjectId = require('mongoose').Types.ObjectId;
 
 const createBooking = async (req, res) => {

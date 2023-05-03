@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const cabSchema = new mongoose.Schema({
   registrationNumber: {
     type: String,
@@ -28,18 +27,4 @@ const cabSchema = new mongoose.Schema({
 });
 
 const Cab = mongoose.model('cab', cabSchema);
-
 module.exports = Cab;
-
-// old ->
-
-// const mongoose = require('mongoose');
-
-// const cabSchema = new mongoose.Schema({
-//   registrationNumber: { type: String, required: true, unique: true },
-//   driverName: { type: String, required: true },
-//   driverPhoneNumber: { type: String, required: true },
-//   available: { type: Boolean, default: true },
-// });
-
-// module.exports = mongoose.model('Cab', cabSchema);

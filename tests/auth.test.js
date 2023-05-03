@@ -79,7 +79,7 @@ describe("POST /api/auth/login", () => {
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash("password", salt);
         user = new User({
-            name: "Test User",
+            name: "Praful",
             email: "praful@test.com",
             password: hashedPassword,
             phoneNumber: "1234567890",
@@ -105,7 +105,6 @@ describe("POST /api/auth/login", () => {
             res.body.data.token,
             config.secretKey
         );
-        console.log("asdfghjkl", decodedToken)
         expect(decodedToken.id).toBe(user._id.toString());
     });
 
